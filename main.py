@@ -117,11 +117,11 @@ White_quality += - (0.0005*Total_sulfur_dioxide) + (0.4161*Sulphates) + (0.3703*
 
 # Returns a rounded quality-value for red wine if the entered wine-type is red
 if Wine_type == "Red wine":
-    st.write(f"Your red wine's quality is: {round(Red_quality,2)}")
+    st.subheader(f"Your red wine's quality is: {round(Red_quality,2)}")
 
 # Returns a rounded quality-value for white wine if the entered wine-type is white
 elif Wine_type == "White wine":
-    st.write(f"Your white wine's quality is: {round(White_quality,2)}")
+    st.subheader(f"Your white wine's quality is: {round(White_quality,2)}")
 
 # Returns an error message in case the code doesn't work.
 else:
